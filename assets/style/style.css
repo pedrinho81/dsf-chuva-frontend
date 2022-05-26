@@ -1,0 +1,83 @@
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+.border {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+.bg {
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+}
+
+.header-height {
+    height: 4.25rem
+}
+
+.menu-item {
+    border-bottom-width: 2px;
+    padding-top: 0.5rem;
+    height: 2.5rem;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.menu-item::before {
+    content: "";
+    margin-left: 1.75rem;
+    background-image: linear-gradient(#ffb354, #ee7a3a);
+    width: 0.5rem;
+    height: 3.3rem;
+}
+
+
+.menu-item.active{
+    border-left: 4px solid #EE7A3A ;
+};
+
+//ACCORDION
+.handleDetalhes {
+    animation: slideDown .7s forwards;
+   
+}
+.hidden {
+    animation: show .7s forwards
+}
+
+textarea {
+    resize:none;
+}
+
+/*aqui cria a animação*/
+
+@keyframes show {
+    from {
+        opacity:0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+
+
+
+
+
