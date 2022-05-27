@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="./assets/style/teste.css">
+    <link rel="stylesheet" href="./assets/style/webkit.css">
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Roboto Font -->
@@ -20,74 +20,77 @@
     <title>Chuva - Exercício Frontend</title>
 </head>
 
-<body class="container flex-col w-screen overflow-x-clip">
-    <header class="flex flex-wrap w-screen ">
-        <aside class="h-screen inline-block absolute flex-col align-center shadow-lg ">
-            <div class="text-center header-height bg py-5 font-roboto my-auto">
-                <h1 class="text-3xl font-bold  text-white">SLACA 2019</h1>
-            </div>
-            <img src="/assets/images/dewey 4.png">
-            <div class="text-title font-quicksand font-bold flex flex-col">
-                <p class="menu-item">Apresentação</p>
-                <p class="menu-item">Comitês</p>
-                <p class="menu-item">Autores</p>
-                <p class="menu-item">Eixos temáticos</p>
-                <p class="menu-item active bg-[#]">Trabalhos</p>
-                <p class="menu-item">Contato</p>
-        </aside>
-        <div class="flex header-height  ml-[12rem] content-center  w-screen py-2 bg-secondary ">
-            <div class="flex items-center ml-[5rem] w-full justify-between ">
-                <div class="flex flex-col">
-                    <p class="text-base mt-2 font-roboto text-title font-light">Anais do Simpósio Latino Americano de
+<body>    
+    <header>
+        <div class="flex header-height sm:justify-between justify-center pr-2 content-center bg-secondary ">
+            <div class="text-center  items-center header-height hidden sm:block sm:w-[10rem]  bg  md:w-[16rem] font-roboto">
+                <h1 class="text-3xl justify-center my-5  m-auto font-bold text-white">SLACA 2019</h1>
+            </div>  
+            <div class="flex items-center justify-items-stretch sm:w-full">
+
+                <div class="hidden ml-10 xl:flex flex-col">
+                    <p class="md:text-sm text-base  mt-2 font-roboto text-title font-light">Anais do Simpósio Latino Americano de
                         Ciências de
                         Alimentos</p>
-                    <h3 class="text-title text-xl -my-1 font-roboto ">Anais do 13º Simpósio Latino Americano de Ciência
+                    <h3 class="text-title text-base sm:text-lg -my-1 font-roboto ">Anais do 13º Simpósio Latino Americano de Ciência
                         de
                         Alimentos </h3>
-                    <span class="text-title mb-2 text-sm">ISSN: 1234-5678</sp>
+                    <span class="text-title mb-2 text-base md:text-sm">ISSN: 1234-5678</sp>
                 </div>
-                <div class="flex justify-center content-center w-24 ml-auto mr-10 mt-3 py-1  border">
+                
+                <div class="sm:flex hover:opacity-50 flex-basis hidden mx-auto justify-center justify-self-center content-center w-24 mt-3 py-1  border">
                     <img src="./assets/images/language image.png" class="h-6 w-6">
                     <span>PT, BR</span>
                     <img src="./assets/images/dropdown.png" class="w-2 ml-1 my-auto h-2">
                 </div>
-                <div class="flex items-center mr-8">
-                    <div class="flex flex-col text-right mr-2">
-                        <p class="text-title">Bem vindo!</p>
-                        <p class="text-title">alguem12@galoascience.com</p>
+                
+                <div class="flex  text-right ml-auto sm:mr-10 content-end no-wrap my-auto items-center ">
+                    <div class="flex flex-col content-end  text-right">
+                        <p class="text-title ">Bem vindo!</p>
+                        <p class="text-title ">alguem12@galoascience.com</p>
                     </div>
-                    <div
-                        class="w-4 right-7 top-5 h-4 absolute rounded-full  flex justify-center content-center items-center text-center  bg-[#f85959]">
-                        <p class="text-white text-center">2</p>
-                    </div>
-                    <img src="./assets/images/image.png" class="rounded-full min-w-auto">
-                </div>
+                    <div class="relative">
+                      <img src="./assets/images/image.png" class="rounded-full hover:opacity-50 transition-opacity w-[40px] h-[40px]inline-block">  
+                        <label class="user-profile  bg-[#f85959] rounded-full">2</label>
+                    </div>   
+                </div> 
             </div>
         </div>
     </header>
-    <main class="w-screen content-center  flex  flex-row">
-        <section class="flex flex-col ml-[30vh] justify-between flex-initial flex-wrap">
-            <header>
-                <h1 class="text-primary w-[60vw] py-6 text-2xl font-bold">Análise sensorial de preparações funcionais
+    <main class="flex text-left sm:content-center flex-wrap flex-row ">
+        <aside class="hidden xl:block  flex-col align-center shadow-lg ">
+            <img src="/assets/images/dewey 4.png">
+                <div class="text-title font-quicksand font-bold flex flex-col">
+                    <p class="menu-item">Apresentação</p>
+                    <p class="menu-item">Comitês</p>
+                    <p class="menu-item">Autores</p>
+                    <p class="menu-item">Eixos temáticos</p>
+                    <p class="menu-item active bg-[#]">Trabalhos</p>
+                    <p class="menu-item">Contato</p>
+            </aside>
+        <section class="flex flex-col p-[1rem] mr-auto text-center lg:ml-[1vw]  sm:justify-between flex-initial flex-wrap">
+            <header class="lg:w-[52vw] xl:mr-auto sm:w-[40rem] mx-auto">
+                <h1 class="text-primary text-left text-lg  py-6 sm:text-2xl font-bold">Análise sensorial de preparações funcionais
                     desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h1>
             </header>
-            <article>
-                <img src="./assets/images/vídeo apresentação.png" class=" h-[60vh] w-[60vw]">
+            <article class="flex-1 xl:mr-auto conteudo  my-auto">
+                <img src="./assets/images/vídeo apresentação.png" class="hover:opacity-50 transition-opacity mx-auto text-center">
             </article>
         </section>
 
-        <aside class="flex flex-col mx-auto text-center mt-8 min-w-fit gap-1 ">
+        <aside class="flex flex-col  mx-auto text-center mt-8 min-w-fit gap-1 ">
             <div>
-                <button>
-                    <img src="/assets/images/download button.png" alt="" srcset="">
+                <button class="hover:opacity-50 transition-opacity">
+                    <img src="/assets/images/download button.png" alt="ícone de download" srcset="">
                 </button>
-                <button>
-                    <img src="/assets/images/favorite button.png" alt="" srcset="">
+                <button class="hover:opacity-50 transition-opacity">
+                    <img src="/assets/images/favorite button.png" alt="ícone de favoritos" srcset="">
                 </button>
-                <button>
-                    <img src="/assets/images/doi button.png" alt="" srcset="">
+                <button class="hover:opacity-50 transition-opacity">
+                    <img src="/assets/images/doi button.png" alt="ícone doi" srcset="">
                 </button>
             </div>
+
             <h3 class="text-primary font-medium text-xl">Como citar este trabalho?</h3>
             <div class="flex mt-2 text-left  flex-col border-2 rounded-md w-60 h-[60vh]">
                 <div class="bg-secondary pl-3">
@@ -146,18 +149,18 @@
             </div>
         </aside>
     </main>
-    <section class="ml-[30vh] cursor-pointer mt-7">
-        <div class="handleDetalhes  flex flex-col overflow-y-hidden w-[60vw] max-h-44  border-2 rounded-md"
+    <section class="cursor-pointer mx-auto w-10/12 xl:ml-[15vw]  mt-7">
+        <div class="handleDetalhes max-h-44  mx-auto flex flex-col overflow-y-hidden  h-auto  border-2 rounded-md"
             id="detalhes">
             <header class="ativo  bg-secondary text-left font-roboto pl-4 py-1  font-bold text-title  text-xl">Resumo
             </header>
             <!--PERGUNTA-->
             <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.e auctor eros sed magna ultricies
-                gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut
-                viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id
-                nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus
-                condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin
-                ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim
+                gravida. Etiam aliquam dictum nisl, vel..psum dolor sit amet, consectetur adipiscing elit.e auctor eros sed magna ultricies
+                gravida. Etiam aliquam dictum nisl, vel...ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim
+                accumsan sit ametl accumsant...sit amet, consectetur adipiscing elit.e auctor eros sed magna ultricies
+                gravida. Etiam aliquam dictum nisl, vel..psum dolor sit amet, consectetur adipiscing elit.e auctor eros sed magna ultricies
+                gravida. Etiam aliquam dictum nisl, vel...ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim
                 accumsan sit ametl accumsant...
                 <span class="text-primary font-medium cursor-pointer fullDetalhes">ver mais</span>
             </p>
@@ -194,22 +197,22 @@
             </p>
         </div>
     </section>
-    <section class="flex flex-col ml-[30vh] mt-7 border-2 rounded-md">
-        <header class="ativobg-primary bg-secondary text-left font-roboto pl-4 py-1  font-bold text-title  text-xl">
+    <section class="flex flex-col mx-auto w-10/12 xl:ml-[15vw] xl:mr-16 mt-7 border-2 rounded-md">
+        <header class="ativo bg-secondary text-left font-roboto pl-4 py-1  font-bold text-title  text-xl">
             Discussões
         </header>
         <div id="initial">
             <h1 class="text-primary text-center  mt-5  text-xl font-bold">Compartilhe suas ideias ou dúvidas com os
                 autores!
             </h1>
-            <article class="flex justify-center my-10 gap-14">
-                <img src="./assets/images/icone1.png" alt="">
-                <img src="./assets/images/icone2.png" alt="">
-                <img src="./assets/images/icone3.png" alt="">
+            <article class="flex flex-wrap justify-center my-10 gap-14">
+                <img src="./assets/images/icone1.png" alt="ilustração de doação">
+                <img src="./assets/images/icone2.png" alt="ilustração balões ilustrando pergunta e resposta">
+                <img src="./assets/images/icone3.png" alt="ilustração pessoas conversando">
             </article>
 
             <!-- //INITIAL -->
-            <p class="text-center w-[50rem] font-normal text-title mx-auto">Sabia que o maior estímulo no
+            <p class="text-center  font-normal text-title mx-auto">Sabia que o maior estímulo no
                 desenvolvimento
                 científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestão para o autor!</p>
             <div class="flex items-center  my-6 ">
@@ -229,8 +232,8 @@
                     <input id="assunto" class="border-[1.5px] py-2 rounded placeholder:pl-6" type="text"
                         placeholder="Defina um tópico sucinto para notificar os autores" />
                     <label for="conteudo" class="text-primary font-medium text-lg">Conteúdo</label>
-                    <textarea id="conteudo" class="resize-none border-[1.5px] py-8 rounded placeholder:pl-8"></textarea>
-                    <div class="flex justify-between  bg-[#EAF1F2]">
+                    <textarea id="conteudo" class="resize-none border-[1.5px] h-28 rounded placeholder:pl-8"></textarea>
+                    <div class="flex flex-wrap justify-between  bg-[#EAF1F2]">
                         <p><b class="ml-4">B <i>&#x1D470;</i> <b /></p>
                         <div class="bg">
                             <button class="bg flex-1 px-20 font-normal text-white" onclick="showSuccess()"
@@ -254,16 +257,14 @@
                     <button onclick="showFormA()"><img src="/assets/images/botão criar novo tópico.png"
                             alt="botao para criar novo tópico"></button>
                     <hr class="flex-1">
-
                 </div>
                 <div
-                    class="bg-[#F4F4F4] shadow-2xl mx-6 mb-4 sm content-center rounded bg-cover justify-center flex flex-col">
+                    class="bg-[#F4F4F4] backdrop-blur-md shadow-2xl mx-6 mb-4 sm content-center rounded bg-cover justify-center flex flex-col">
                     <div class="py-6 mb-4">
                         <img src="./assets/images/ (1).png" class="w-8 mx-auto h-8" alt="" srcset="">
                         <p class="font-bold text-[#707070] py-2">Aguardando feedback dos autores</p>
                         <a href="#" class="text-primary font-normal underline">Editar tópico</a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -276,8 +277,8 @@
                     inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de
                     processo formativo processo...</p>
                 <div class="flex align-bottom ml-4 content-center gap-4 mb-2">
-                    <i><img src="/assets/images/mais informações.svg" alt="" srcset=""></i>
-                    <i><img src="/assets/images/favoritar.svg" alt="" srcset=""></i>
+                    <i><img src="/assets/images/mais informações.svg" alt="ícone mais informações" srcset=""></i>
+                    <i><img src="/assets/images/favoritar.svg" alt="ícone favoritar" srcset=""></i>
 
                     <p class="text-[#757575] font-medium">
                         <a href="#">1 like</a>
@@ -285,6 +286,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="border-2 flex flex-col  m-2 rounded shadow-lg">
                 <h6 class="text-primary mt-4 ml-4 ">Assunto da pergunta aparece aqui</h6>
                 <span class="text-[#5c5c5c] ml-4 mb-2 font-medium text-md">Carlos Henrique Santos</span>
@@ -292,8 +294,8 @@
                     inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de
                     processo formativo processo...</p>
                 <div class="flex align-bottom ml-4 content-center gap-4 mb-2">
-                    <i><img src="/assets/images/mais informações.svg" alt="" srcset=""></i>
-                    <i><img src="/assets/images/favoritar.svg" alt="" srcset=""></i>
+                    <i><img src="/assets/images/mais informações.svg" alt="ícone mais informações" srcset=""></i>
+                    <i><img src="/assets/images/favoritar.svg" alt="ícone favoritar" srcset=""></i>
 
                     <p class="text-[#757575] font-medium">
                         <a href="#">1 like</a>
@@ -304,12 +306,25 @@
         </div>
     </section>
     <footer class="w-screen">
-        <img class="mx-auto " src="/assets/images/imagem - footer.svg" alt="" srcset="">
+        <img class="mx-auto " src="/assets/images/imagem - footer.svg" alt="imagem de rodapé informações galoá" srcset="">
     </footer>
-    <script type="text/javascript" src="assets/style/tailwindConfig.js"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ED7839;",
+              secondary: '#FDF1EB;',
+              title: "#725C5C"
+            },
+            FontFace: {
+              roboto: 'font-family: "Roboto", sans-serif;',
+            }
+          }
+        }
+      }
+    </script>
+    
     <script type="text/javascript" src="assets/script/script.js"></script>
 </body>
-
-
-
 </html>

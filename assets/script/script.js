@@ -1,5 +1,3 @@
-
-
 function handleDetalhes() {
     let DetalhesSection = document.getElementById("detalhes")
 
@@ -23,11 +21,13 @@ function handleDetalhes() {
 }
 handleDetalhes()
 
+
+//form
+
+const form = document.getElementById("task-form")
 let initial = document.getElementById("initial")
 let formSection = document.getElementById("form")
 let success = document.getElementById("success")
-
-
 
 function showSuccess() {
     
@@ -61,14 +61,8 @@ function showSuccess() {
         conteudoField.value =""
         } else {
             alert("Por favor, preencha os campos para enviar o tópico!")
-        }
-        
-        
-        
+        }      
     }
-    
-    
-
 }
 
 function showForm() {
@@ -81,7 +75,6 @@ function showFormA() {
     success.classList.toggle("hidden")
 }
 
-const form = document.getElementById("task-form")
 
 
 
